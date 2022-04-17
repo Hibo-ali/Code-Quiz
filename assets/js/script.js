@@ -60,3 +60,32 @@ restart_quiz.onclick = ()=>{
     timeText.textContent = "Time Left"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
 }
+
+
+// if quitQuiz button clicked
+quit_quiz.onclick = ()=>{
+  window.location.reload(); //reload the current window
+}
+
+const next_btn = document.querySelector("footer .nextBtn");
+const bottom_ques_counter = document.querySelector("footer .totalQuestions");
+
+// if Next Que button clicked
+next_btn.onclick = ()=>{
+  if(que_count < questions.length - 1){ //if question count is less than total question length
+      que_count++; //increment the que_count value
+      que_numb++; //increment the que_numb value
+      showQuestions(que_count); //calling showQuestions function
+      queCounter(que_numb); //passing que_numb value to queCounter
+      clearInterval(counter); //clear counter
+      clearInterval(counterLine); //clear counterLine
+      startTimer(timeValue); //calling startTimer function
+      startTimerLine(widthValue); //calling startTimerLine function
+      timeText.textContent = "Time Left"; //change the timeText to Time Left
+      next_btn.classList.remove("show"); //hide the next button
+  }else{
+      clearInterval(counter); //clear counter
+      clearInterval(counterLine); //clear counterLine
+      showResult(); //calling showResult function
+  }
+}
