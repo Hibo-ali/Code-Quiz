@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz App | CodingNepal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FontAwesome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div class="startBtn"><button>Start Quiz</button></div>
+
+   
+  
+    <!-- Info Box -->
+    <div class="infoBox">
+        <div class="infoTitle"><span>Quiz Rules</span></div>
+        <div class="infoList">
+            <div class="info"> You will have only <span>10 seconds</span> per question. <br>
+                Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            </div>
+       
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quizBox">
+        <header>
+            <div class="title">Coding Quiz Challenge</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timerSeconds">10</div>
+            </div>
+            <div class="timeLine"></div>
+        </header>
+        <section>
+            <div class="questionText">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="optionList">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="totalQuestions">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="nextBtn">Next Question</button>
+        </footer>
+    </div>
+
+
+
+   
+
+    <!-- Result Box -->
+    <div class="resultBox">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="completeText">You've completed the Quiz!</div>
+        <div class="scoreBoard">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="assets/js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+  
