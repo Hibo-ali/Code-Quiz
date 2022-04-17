@@ -19,7 +19,8 @@
 * THEN I can save my initials and score
 
 
-# SS: ![](images/ss1.png, images/ss2.png) 
+# SS: ![](images/ss1.png 
+# ![](images/ss2.png) 
 
 
 # URL: https://hibo-ali.github.io/Code-Quiz/
